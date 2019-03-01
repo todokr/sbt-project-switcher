@@ -26,3 +26,6 @@ lazy val lorem = project in file("lorem")
 lazy val ipsum = project in file("ipsum")
 ...
 ```
+
+## License
+MIT
