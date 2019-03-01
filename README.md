@@ -1,4 +1,5 @@
 # sbt-project-switcher
+A sbt plugin to switch project in a snappy way⚡️
 
 ## Demo
 ![demo](https://raw.githubusercontent.com/todokr/sbt-project-switcher/master/pjs.gif)
