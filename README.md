@@ -1,6 +1,7 @@
 # sbt-project-switcher
 
 ## Demo
+![demo](https://raw.githubusercontent.com/todokr/sbt-project-switcher/master/pjs.gif)
 
 ## Requirement
 CLI filter tool you like
