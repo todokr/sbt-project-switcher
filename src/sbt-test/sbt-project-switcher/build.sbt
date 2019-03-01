@@ -1,10 +1,6 @@
 name := "test-sbt-project-switcher"
 version := "0.1.0"
 
-pjsFilterCommand := "fzf" // filter tool command you want to use
-enablePlugins(ProjectSwitcher)
-
-
 lazy val root = project in file(".")
 lazy val lorem = project in file("lorem")
 lazy val ipsum = project in file("ipsum")
