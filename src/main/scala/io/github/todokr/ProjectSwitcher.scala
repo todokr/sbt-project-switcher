@@ -16,11 +16,8 @@ object ProjectSwitcher extends AutoPlugin {
 
   import autoImport._
 
-  override def globalSettings = Seq(
-    pjsFilterCommand := "fzf"
-  )
-
   override def projectSettings: Seq[Setting[_]] = Seq(
+    pjsFilterCommand := "fzf",
     commands += Command.command("pjs") { state =>
       val projects = buildDependencies.value.classpath.keys.map(_.project)
       val result = Try(Seq("echo", projects.mkString(System.lineSeparator)).#|(pjsFilterCommand.value).!!.trim)
