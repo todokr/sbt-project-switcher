@@ -1,32 +1,38 @@
-# sbt-project-switcher
+# sbt-project-switcher [![Latest version](https://index.scala-lang.org/todokr/sbt-project-switcher/sbt-project-switcher/latest.svg)](https://index.scala-lang.org/todokr/sbt-project-switcher/sbt-project-switcher)
+
 A sbt plugin to switch project in a snappy way⚡️
+
 
 ## Demo
 ![demo](https://raw.githubusercontent.com/todokr/sbt-project-switcher/master/pjs.gif)
 
+
 ## Requirement
-CLI filter tool you like
+sbt-project switcher uses [fzf](https://github.com/junegunn/fzf) to filter project.  
+Install fzf and make sure that the command is in PATH and available.
 
-- [fzf](https://github.com/junegunn/fzf) (default)
-- [peco](https://github.com/peco/peco)
-- [percol](https://github.com/mooz/percol)
-- [fzy](https://github.com/jhawthorn/fzy)
-- etc.
 
-If you want to use filter tool other than default, you can set in `PjsFilterCommand` (See **Usage**). 
+## Setup
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.todokr/sbt-project-switcher/badge.svg)](https://search.maven.org/artifact/io.github.todokr/sbt-project-switcher)
 
-## Usage
 
-### build.sbt
+### Globally
+
+Recommended. Just add sbt-project-switcher to `~/.sbt/1.0/plugins/sbt-project-switcher.sbt`.
+
 ```scala
-pjsFilterCommand := "fzf" // filter tool command you want to use
-enablePlugins(ProjectSwitcher)
-
-lazy val root = project in file(".")
-lazy val lorem = project in file("lorem")
-lazy val ipsum = project in file("ipsum")
-...
+addSbtPlugin("io.github.todokr" % "sbt-project-swithcer" % "(version)")
 ```
+
+
+### Per project
+
+Add sbt-project-switcher to `project/plugins.sbt`.
+
+```scala
+addSbtPlugin("io.github.todokr" % "sbt-project-swithcer" % "(version)")
+```
+
 
 ## License
 MIT
