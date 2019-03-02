@@ -20,7 +20,7 @@ Then, choose project name you want to switch.
 
 
 ## Requirement
-sbt-project switcher uses [fzf](https://github.com/junegunn/fzf) to filter project.  
+sbt-project-switcher uses [fzf](https://github.com/junegunn/fzf) to filter project.  
 Install fzf and make sure that the command is in PATH and available.
 
 
