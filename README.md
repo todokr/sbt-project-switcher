@@ -7,6 +7,18 @@ A sbt plugin to switch project in a snappy way⚡️
 ![demo](https://raw.githubusercontent.com/todokr/sbt-project-switcher/master/pjs.gif)
 
 
+## Usage
+
+Enter `pjs` in sbt console.
+
+```console
+$ sbt
+> pjs
+```
+
+Then, choose project name you want to switch.
+
+
 ## Requirement
 sbt-project switcher uses [fzf](https://github.com/junegunn/fzf) to filter project.  
 Install fzf and make sure that the command is in PATH and available.
