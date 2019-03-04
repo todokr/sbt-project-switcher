@@ -31,7 +31,7 @@ Install fzf and make sure that the command is in PATH and available.
 Recommended. Just add sbt-project-switcher to `~/.sbt/1.0/plugins/sbt-project-switcher.sbt`.
 
 ```scala
-addSbtPlugin("io.github.todokr" % "sbt-project-swithcer" % "(version)")
+addSbtPlugin("io.github.todokr" % "sbt-project-switcher" % "(version)")
 ```
 
 
@@ -40,7 +40,7 @@ addSbtPlugin("io.github.todokr" % "sbt-project-swithcer" % "(version)")
 Add sbt-project-switcher to `project/plugins.sbt`.
 
 ```scala
-addSbtPlugin("io.github.todokr" % "sbt-project-swithcer" % "(version)")
+addSbtPlugin("io.github.todokr" % "sbt-project-switcher" % "(version)")
 ```
 
 
