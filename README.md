@@ -1,4 +1,4 @@
-# sbt-project-switcher [![Latest version](https://img.shields.io/badge/sbt--project--switcher-0.1.1-green.svg?ver=0.1.1)](https://index.scala-lang.org/todokr/sbt-project-switcher/sbt-project-switcher)
+# sbt-project-switcher [![Latest version](https://img.shields.io/badge/sbt--project--switcher-0.1.2-green.svg?ver=0.1.2)](https://index.scala-lang.org/todokr/sbt-project-switcher/sbt-project-switcher)
 
 A sbt plugin to switch project in a snappy way⚡️
 
