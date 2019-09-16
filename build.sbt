@@ -2,7 +2,7 @@ import Dependencies._
 
 sbtPlugin := true
 
-version          := "0.1.1"
+version          := "0.1.2"
 organization     := "io.github.todokr"
 organizationName := "todokr"
 name             := "sbt-project-switcher"
