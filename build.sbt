@@ -2,11 +2,12 @@ import Dependencies._
 
 sbtPlugin := true
 
-version          := "0.1.2"
-organization     := "io.github.todokr"
-organizationName := "todokr"
-name             := "sbt-project-switcher"
-scalacOptions    += "-feature"
+version            := "0.1.3"
+organization       := "io.github.todokr"
+organizationName   := "todokr"
+name               := "sbt-project-switcher"
+scalacOptions      += "-feature"
+crossScalaVersions := Seq("2.12.10", "2.13.1")
 
 lazy val root = (project in file("."))
   .settings(
