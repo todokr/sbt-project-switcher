@@ -2,11 +2,11 @@ import Dependencies._
 
 sbtPlugin := true
 
-version          := "0.1.2"
-organization     := "io.github.todokr"
+version := "0.1.3"
+organization := "io.github.todokr"
 organizationName := "todokr"
-name             := "sbt-project-switcher"
-scalacOptions    += "-feature"
+name := "sbt-project-switcher"
+scalacOptions += "-feature"
 
 lazy val root = (project in file("."))
   .settings(
@@ -15,14 +15,14 @@ lazy val root = (project in file("."))
   )
 
 description := "A sbt plugin to switch project in a snappy way⚡️"
-licenses    := List("MIT" -> new URL("https://opensource.org/licenses/MIT"))
-homepage    := Some(url("https://github.com/todokr/sbt-project-switcher"))
+licenses := List("MIT" -> new URL("https://opensource.org/licenses/MIT"))
+homepage := Some(url("https://github.com/todokr/sbt-project-switcher"))
 developers := List(
   Developer(
-    id    = "todokr",
-    name  = "Shunsuke Tadokoro",
+    id = "todokr",
+    name = "Shunsuke Tadokoro",
     email = "s.tadokoro0317@gmail.com",
-    url   = url("https://github.com/todokr")
+    url = url("https://github.com/todokr")
   )
 )
 scmInfo := Some(
@@ -31,10 +31,13 @@ scmInfo := Some(
     "scm:git@github.com:todokr/sbt-project-switcher.git"
   )
 )
-pomIncludeRepository := { _ => false }
+pomIncludeRepository := { _ =>
+  false
+}
 publishTo := {
   val nexus = "https://oss.sonatype.org/"
-  if (isSnapshot.value) Some("snapshots" at nexus + "content/repositories/snapshots")
+  if (isSnapshot.value)
+    Some("snapshots" at nexus + "content/repositories/snapshots")
   else Some("releases" at nexus + "service/local/staging/deploy/maven2")
 }
 publishMavenStyle := true
